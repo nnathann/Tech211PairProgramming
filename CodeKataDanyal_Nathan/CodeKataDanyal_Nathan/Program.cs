@@ -33,7 +33,12 @@ namespace CodeKataDanyal_Nathan
                 wholeNumber -= (one);
             }
 
-            //int decimalNumber = Convert.ToInt32(money.Substring(index, maxLength));
+            double decimalNumber = Convert.ToDouble(money);
+
+            var onlyDecimal = decimalNumber - wholeNumber;
+
+
+
             //Console.WriteLine(decimalNumber);
 
             return $"$20: {twenty}, $10: {ten}, $5: {five}, $2: {two}, $1: {one}, $0.50: {fiftyP}, $0.20: {twentyP}, $0.10: {tenP}, $0.05: {fiveP}, $0.01: {oneP}";
